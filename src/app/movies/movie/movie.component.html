@@ -1,0 +1,6 @@
+<div class="movie">
+  <p>{{ movie?.name }}</p>
+  <app-actors [actors]="movie?.actors"></app-actors>
+  <p>{{ movie?.isNew }}</p>
+  <p>{{ movie?.date | date: "MM/dd/yy" }}</p>
+</div>

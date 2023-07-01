@@ -1,0 +1,33 @@
+<div class="add-movie">
+  <label>
+    Name:
+    <input type="text" [(ngModel)]="name" placeholder="Name" />
+  </label>
+  <div class="actor-fields">
+    <label>
+      Actor Name:
+      <input type="text" placeholder="Actor Name" [(ngModel)]="actorName" />
+    </label>
+    <label>
+      Actor Age:
+      <input type="number" placeholder="Actor Age" [(ngModel)]="actorAge" />
+    </label>
+    <label>
+      Gender:
+      <select [(ngModel)]="gender">
+        <option></option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </label>
+  </div>
+  <label>
+    Is New?
+    <input type="checkbox" [(ngModel)]="isNew" />
+  </label>
+  <label>
+    Date:
+    <input type="date" [(ngModel)]="date" />
+  </label>
+  <input type="button" value="Add Movie" (click)="addMovie()" />
+</div>

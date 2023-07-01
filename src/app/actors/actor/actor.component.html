@@ -1,0 +1,7 @@
+<div>
+  <p>{{ actor?.actorName }}</p>
+  <p>{{ actor?.actorAge }}</p>
+  <p [ngClass]="actor?.gender === 'female' ? 'female' : 'male'">
+    {{ actor?.gender }}
+  </p>
+</div>

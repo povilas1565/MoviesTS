@@ -1,0 +1,21 @@
+.add-movie {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  align-items: center;
+}
+input,
+select {
+  width: 180px;
+  text-align: center;
+  font-size: 18px;
+  margin: 10px;
+}
+label {
+  font-size: 18px;
+  color: blueviolet;
+}
+.actor-fields {
+  display: flex;
+  flex-flow: column;
+}

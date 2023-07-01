@@ -1,0 +1,13 @@
+<app-add-movie></app-add-movie>
+<input type="text" [(ngModel)]="movieByName" placeholder="Movie name" />
+<input type="text" [(ngModel)]="movieByActorName" placeholder="Actor name" />
+<div class="movies">
+  <app-movie
+    *ngFor="
+      let movie of movies
+        | movieByName: movieByName
+        | actorName: movieByActorName
+    "
+    [movie]="movie"
+  ></app-movie>
+</div>
